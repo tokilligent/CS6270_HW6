@@ -108,6 +108,43 @@ class Widget:
     def to_json(self) -> str:
         return json.dumps(self.to_dict())
 
+    @classmethod
+    def from_dict(cls, data: dict) -> "Widget":
+        return cls(
+            id=data["id"],
+            owner=data["owner"],
+            label=data.get("label"),
+            description=data.get("description"),
+            other_attributes={a["name"]: a["value"] for a in data.get("otherAttributes") or []},
+        )
+
+    def apply_update(self, request: WidgetRequest) -> "Widget":
+        """Return a copy of this widget with the changes in an update request applied.
+
+        A missing or null value leaves a property unchanged; an empty string clears
+        label/description (sets them to None) or removes an other attribute.
+        The id and owner never change.
+        """
+        others = dict(self.other_attributes)
+        for attr in request.other_attributes:
+            if attr.value == "":
+                others.pop(attr.name, None)
+            elif attr.value is not None:
+                others[attr.name] = attr.value
+        return Widget(
+            id=self.id,
+            owner=self.owner,
+            label=_updated(self.label, request.label),
+            description=_updated(self.description, request.description),
+            other_attributes=others,
+        )
+
+
+def _updated(current: Optional[str], new: Optional[str]) -> Optional[str]:
+    if new is None:
+        return current
+    return None if new == "" else new
+
 
 def parse_request(text: str) -> WidgetRequest:
     """Parse and validate a JSON Widget Request."""

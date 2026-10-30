@@ -213,3 +213,87 @@ def test_widget_to_json_with_no_optional_data():
 
     assert data == {"id": "w1", "owner": "Sue Smith", "label": None, "description": None,
                     "otherAttributes": []}
+
+
+# ---- Widget.from_dict ----
+
+def test_from_dict_round_trips_to_dict():
+    widget = Widget(id="w1", owner="Sue Smith", label="L", description="D",
+                    other_attributes={"color": "red", "size": "5"})
+
+    assert Widget.from_dict(widget.to_dict()) == widget
+
+
+@pytest.mark.parametrize("data", [
+    {"id": "w1", "owner": "Sue Smith"},
+    {"id": "w1", "owner": "Sue Smith", "label": None, "description": None, "otherAttributes": None},
+])
+def test_from_dict_with_optional_data_absent_or_null(data):
+    assert Widget.from_dict(data) == Widget(id="w1", owner="Sue Smith")
+
+
+def test_from_dict_ignores_unknown_fields():
+    data = {"id": "w1", "owner": "Sue Smith", "lastModifiedOn": "Oct 1, 2026 5:14:19 AM"}
+
+    assert Widget.from_dict(data) == Widget(id="w1", owner="Sue Smith")
+
+
+# ---- Widget.apply_update ----
+
+EXISTING = Widget(id="w1", owner="Sue Smith", label="old label", description="old desc",
+                  other_attributes={"color": "red", "size": "5"})
+
+
+def _update(label=None, description=None, attrs=(), widget_id="w1", owner="Sue Smith"):
+    return WidgetRequest(RequestType.UPDATE, "r", widget_id, owner, label=label,
+                         description=description,
+                         other_attributes=[Attribute(n, v) for n, v in attrs])
+
+
+def test_update_with_no_changes_leaves_widget_unchanged():
+    assert EXISTING.apply_update(_update()) == EXISTING
+
+
+@pytest.mark.parametrize("field", ["label", "description"])
+@pytest.mark.parametrize("value, expected", [
+    (None, "unchanged"),   # null / not included -> unchanged
+    ("", None),            # empty string -> cleared
+    ("new", "new"),        # value -> replaced
+])
+def test_update_label_and_description(field, value, expected):
+    updated = EXISTING.apply_update(_update(**{field: value}))
+
+    expected_value = getattr(EXISTING, field) if expected == "unchanged" else expected
+    assert getattr(updated, field) == expected_value
+    other = "description" if field == "label" else "label"
+    assert getattr(updated, other) == getattr(EXISTING, other)
+    assert updated.other_attributes == EXISTING.other_attributes
+
+
+@pytest.mark.parametrize("attrs, expected", [
+    ([("color", None)], {"color": "red", "size": "5"}),                  # null -> unchanged
+    ([("color", "blue")], {"color": "blue", "size": "5"}),               # existing -> replaced
+    ([("vendor", "ACME")], {"color": "red", "size": "5", "vendor": "ACME"}),  # new -> added
+    ([("color", "")], {"size": "5"}),                                    # empty -> removed
+    ([("vendor", "")], {"color": "red", "size": "5"}),                   # remove missing -> no-op
+    ([("color", ""), ("size", "6"), ("vendor", "ACME")], {"size": "6", "vendor": "ACME"}),
+])
+def test_update_other_attributes(attrs, expected):
+    updated = EXISTING.apply_update(_update(attrs=attrs))
+
+    assert updated.other_attributes == expected
+    assert (updated.label, updated.description) == (EXISTING.label, EXISTING.description)
+
+
+def test_update_never_changes_id_or_owner():
+    updated = EXISTING.apply_update(_update(widget_id="other-id", owner="Henry Hops"))
+
+    assert (updated.id, updated.owner) == ("w1", "Sue Smith")
+
+
+def test_update_does_not_modify_original_widget():
+    before = Widget.from_dict(EXISTING.to_dict())
+
+    EXISTING.apply_update(_update(label="new", attrs=[("color", "")]))
+
+    assert EXISTING == before
