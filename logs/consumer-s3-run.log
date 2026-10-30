@@ -1,0 +1,104 @@
+2026-10-27 21:19:01,960 INFO    consumer - Starting consumer: request-bucket=usu-cs5270-toki-requests storage=s3 target=usu-cs5270-toki-web region=us-east-1
+2026-10-27 21:19:02,068 INFO    consumer.loop - Consumer started (max_runtime=None, max_idle=5.0)
+2026-10-27 21:19:03,612 INFO    consumer.processor - Processing create request 0e470ba0-62fb-41f3-979e-ac0b851cc67f for widget f07f6a21-48a0-49a5-9b13-0a9d8e744bc7 (owner Henry Hops)
+2026-10-27 21:19:04,044 INFO    consumer.storage - Stored widget f07f6a21-48a0-49a5-9b13-0a9d8e744bc7 in s3://usu-cs5270-toki-web/widgets/henry-hops/f07f6a21-48a0-49a5-9b13-0a9d8e744bc7
+2026-10-27 21:19:04,298 INFO    consumer.processor - Processing create request 45087fb8-cd92-41b6-a71b-5a336a0b48ce for widget 7ec9dd3d-2c48-4b48-a163-49d11bf2ed64 (owner Henry Hops)
+2026-10-27 21:19:04,446 INFO    consumer.storage - Stored widget 7ec9dd3d-2c48-4b48-a163-49d11bf2ed64 in s3://usu-cs5270-toki-web/widgets/henry-hops/7ec9dd3d-2c48-4b48-a163-49d11bf2ed64
+2026-10-27 21:19:04,705 INFO    consumer.processor - Processing create request eddf333b-ef7e-45ea-a547-a97ed3788ff7 for widget 907a0692-e131-4754-9661-1de9d903ddc4 (owner Henry Hops)
+2026-10-27 21:19:04,858 INFO    consumer.storage - Stored widget 907a0692-e131-4754-9661-1de9d903ddc4 in s3://usu-cs5270-toki-web/widgets/henry-hops/907a0692-e131-4754-9661-1de9d903ddc4
+2026-10-27 21:19:05,114 INFO    consumer.processor - Processing create request 4dc7b6f0-e735-4ef9-b240-072f49c71b84 for widget 20bf2976-1bf0-49e7-a2af-c697c72974aa (owner Sue Smith)
+2026-10-27 21:19:05,258 INFO    consumer.storage - Stored widget 20bf2976-1bf0-49e7-a2af-c697c72974aa in s3://usu-cs5270-toki-web/widgets/sue-smith/20bf2976-1bf0-49e7-a2af-c697c72974aa
+2026-10-27 21:19:05,510 INFO    consumer.processor - Processing create request 01dfe18b-fbfb-4fb9-999f-ae18f3eca70c for widget 21c497c7-1832-44cd-b745-13e8149bee50 (owner John Jones)
+2026-10-27 21:19:05,650 INFO    consumer.storage - Stored widget 21c497c7-1832-44cd-b745-13e8149bee50 in s3://usu-cs5270-toki-web/widgets/john-jones/21c497c7-1832-44cd-b745-13e8149bee50
+2026-10-27 21:19:05,902 INFO    consumer.processor - Processing delete request d72fcc59-d7f8-486d-8324-e2998bee7334 for widget 21c497c7-1832-44cd-b745-13e8149bee50 (owner John Jones)
+2026-10-27 21:19:05,902 WARNING consumer.processor - Delete requests are not supported yet; skipped request d72fcc59-d7f8-486d-8324-e2998bee7334
+2026-10-27 21:19:06,154 INFO    consumer.processor - Processing create request a33c85bd-c0a2-4764-a3d8-39ca76798630 for widget 1bef98d0-334c-4c4c-8213-9a784f56db6b (owner Sue Smith)
+2026-10-27 21:19:06,302 INFO    consumer.storage - Stored widget 1bef98d0-334c-4c4c-8213-9a784f56db6b in s3://usu-cs5270-toki-web/widgets/sue-smith/1bef98d0-334c-4c4c-8213-9a784f56db6b
+2026-10-27 21:19:06,554 INFO    consumer.processor - Processing update request a1391afd-aa88-4db3-abd0-1265413523d7 for widget 1bef98d0-334c-4c4c-8213-9a784f56db6b (owner Sue Smith)
+2026-10-27 21:19:06,555 WARNING consumer.processor - Update requests are not supported yet; skipped request a1391afd-aa88-4db3-abd0-1265413523d7
+2026-10-27 21:19:06,846 INFO    consumer.processor - Processing create request 28e56fad-5a00-4ba3-ac2a-24cdf354a5c2 for widget 25d20812-0009-44a4-a6aa-068084c5508a (owner Sue Smith)
+2026-10-27 21:19:06,985 INFO    consumer.storage - Stored widget 25d20812-0009-44a4-a6aa-068084c5508a in s3://usu-cs5270-toki-web/widgets/sue-smith/25d20812-0009-44a4-a6aa-068084c5508a
+2026-10-27 21:19:07,252 INFO    consumer.processor - Processing create request 220a84a1-9902-40a0-a847-26ce06eb4081 for widget 16751ecc-c2a9-4df7-a960-6f88346a051c (owner Sue Smith)
+2026-10-27 21:19:07,396 INFO    consumer.storage - Stored widget 16751ecc-c2a9-4df7-a960-6f88346a051c in s3://usu-cs5270-toki-web/widgets/sue-smith/16751ecc-c2a9-4df7-a960-6f88346a051c
+2026-10-27 21:19:07,637 INFO    consumer.processor - Processing delete request b2dfc6b5-d06c-4134-bd68-237653841a13 for widget 16751ecc-c2a9-4df7-a960-6f88346a051c (owner Sue Smith)
+2026-10-27 21:19:07,637 WARNING consumer.processor - Delete requests are not supported yet; skipped request b2dfc6b5-d06c-4134-bd68-237653841a13
+2026-10-27 21:19:07,887 INFO    consumer.processor - Processing update request e133d2b6-2b63-4cca-9ebf-cf7a0f75bde6 for widget 7ec9dd3d-2c48-4b48-a163-49d11bf2ed64 (owner Henry Hops)
+2026-10-27 21:19:07,887 WARNING consumer.processor - Update requests are not supported yet; skipped request e133d2b6-2b63-4cca-9ebf-cf7a0f75bde6
+2026-10-27 21:19:08,140 INFO    consumer.processor - Processing update request a4545b90-5cac-4402-b9df-c0baf771f6c8 for widget 20bf2976-1bf0-49e7-a2af-c697c72974aa (owner Sue Smith)
+2026-10-27 21:19:08,140 WARNING consumer.processor - Update requests are not supported yet; skipped request a4545b90-5cac-4402-b9df-c0baf771f6c8
+2026-10-27 21:19:08,386 INFO    consumer.processor - Processing update request fce0d6a9-e98f-4f94-b133-35ed513fab9a for widget 25d20812-0009-44a4-a6aa-068084c5508a (owner Sue Smith)
+2026-10-27 21:19:08,386 WARNING consumer.processor - Update requests are not supported yet; skipped request fce0d6a9-e98f-4f94-b133-35ed513fab9a
+2026-10-27 21:19:08,678 INFO    consumer.processor - Processing delete request a0095fa8-5105-4241-bef4-ca50aa34c977 for widget 25d20812-0009-44a4-a6aa-068084c5508a (owner Sue Smith)
+2026-10-27 21:19:08,678 WARNING consumer.processor - Delete requests are not supported yet; skipped request a0095fa8-5105-4241-bef4-ca50aa34c977
+2026-10-27 21:19:08,967 INFO    consumer.processor - Processing update request 2fcb7f71-7b03-497b-ab57-5c615fa3240f for widget 7ec9dd3d-2c48-4b48-a163-49d11bf2ed64 (owner Henry Hops)
+2026-10-27 21:19:08,967 WARNING consumer.processor - Update requests are not supported yet; skipped request 2fcb7f71-7b03-497b-ab57-5c615fa3240f
+2026-10-27 21:19:09,227 INFO    consumer.processor - Processing create request 6246c819-c7f6-4ed4-85a4-16adaeaf8d06 for widget 6cb28892-d215-4994-ada4-850bdaff7ca3 (owner Henry Hops)
+2026-10-27 21:19:09,370 INFO    consumer.storage - Stored widget 6cb28892-d215-4994-ada4-850bdaff7ca3 in s3://usu-cs5270-toki-web/widgets/henry-hops/6cb28892-d215-4994-ada4-850bdaff7ca3
+2026-10-27 21:19:09,635 INFO    consumer.processor - Processing create request c5af92b5-5ee9-402d-8076-b9d493e19bf7 for widget 74e58c4d-d22e-4a62-a251-5b501d18d102 (owner John Jones)
+2026-10-27 21:19:09,772 INFO    consumer.storage - Stored widget 74e58c4d-d22e-4a62-a251-5b501d18d102 in s3://usu-cs5270-toki-web/widgets/john-jones/74e58c4d-d22e-4a62-a251-5b501d18d102
+2026-10-27 21:19:10,025 INFO    consumer.processor - Processing create request bf74aeae-999a-4e91-9b56-a94fe5703e97 for widget 1ec4027e-2aab-471c-bb3f-25f703b1448d (owner Mary Matthews)
+2026-10-27 21:19:10,178 INFO    consumer.storage - Stored widget 1ec4027e-2aab-471c-bb3f-25f703b1448d in s3://usu-cs5270-toki-web/widgets/mary-matthews/1ec4027e-2aab-471c-bb3f-25f703b1448d
+2026-10-27 21:19:10,439 INFO    consumer.processor - Processing delete request 27265884-2811-4a7d-ac0b-eef34f8a85df for widget f07f6a21-48a0-49a5-9b13-0a9d8e744bc7 (owner Henry Hops)
+2026-10-27 21:19:10,439 WARNING consumer.processor - Delete requests are not supported yet; skipped request 27265884-2811-4a7d-ac0b-eef34f8a85df
+2026-10-27 21:19:10,698 INFO    consumer.processor - Processing create request 2f5e0ab6-1541-4177-a250-c09a84c90a63 for widget 38458b0a-036d-436d-a1a3-7dffbe18227d (owner Mary Matthews)
+2026-10-27 21:19:10,861 INFO    consumer.storage - Stored widget 38458b0a-036d-436d-a1a3-7dffbe18227d in s3://usu-cs5270-toki-web/widgets/mary-matthews/38458b0a-036d-436d-a1a3-7dffbe18227d
+2026-10-27 21:19:11,112 INFO    consumer.processor - Processing update request a6032333-5a95-4861-8df1-1546a58fd19c for widget 1bef98d0-334c-4c4c-8213-9a784f56db6b (owner Sue Smith)
+2026-10-27 21:19:11,112 WARNING consumer.processor - Update requests are not supported yet; skipped request a6032333-5a95-4861-8df1-1546a58fd19c
+2026-10-27 21:19:11,352 INFO    consumer.processor - Processing create request e6eb00c8-5ead-476b-86de-c034eb13495b for widget ef02e19c-cca2-44ea-bfec-123e91b311e2 (owner Henry Hops)
+2026-10-27 21:19:11,501 INFO    consumer.storage - Stored widget ef02e19c-cca2-44ea-bfec-123e91b311e2 in s3://usu-cs5270-toki-web/widgets/henry-hops/ef02e19c-cca2-44ea-bfec-123e91b311e2
+2026-10-27 21:19:11,748 INFO    consumer.processor - Processing create request 289485e5-c277-4d1b-9a8a-59c12b39595a for widget b28c12d8-9582-4701-ad16-a61f226ddc81 (owner Mary Matthews)
+2026-10-27 21:19:11,890 INFO    consumer.storage - Stored widget b28c12d8-9582-4701-ad16-a61f226ddc81 in s3://usu-cs5270-toki-web/widgets/mary-matthews/b28c12d8-9582-4701-ad16-a61f226ddc81
+2026-10-27 21:19:12,146 INFO    consumer.processor - Processing delete request 6c85cdc3-9fe7-457a-aa93-ff4b1327ea01 for widget 6cb28892-d215-4994-ada4-850bdaff7ca3 (owner Henry Hops)
+2026-10-27 21:19:12,146 WARNING consumer.processor - Delete requests are not supported yet; skipped request 6c85cdc3-9fe7-457a-aa93-ff4b1327ea01
+2026-10-27 21:19:12,428 INFO    consumer.processor - Processing create request 59443913-1b99-40ec-8950-708720399241 for widget 1d8ce535-d4d1-46fb-afed-b6e7453dc650 (owner John Jones)
+2026-10-27 21:19:12,570 INFO    consumer.storage - Stored widget 1d8ce535-d4d1-46fb-afed-b6e7453dc650 in s3://usu-cs5270-toki-web/widgets/john-jones/1d8ce535-d4d1-46fb-afed-b6e7453dc650
+2026-10-27 21:19:12,825 INFO    consumer.processor - Processing update request 493a61fd-c32f-4417-80e4-7e181cfaef2d for widget 907a0692-e131-4754-9661-1de9d903ddc4 (owner Henry Hops)
+2026-10-27 21:19:12,825 WARNING consumer.processor - Update requests are not supported yet; skipped request 493a61fd-c32f-4417-80e4-7e181cfaef2d
+2026-10-27 21:19:13,082 INFO    consumer.processor - Processing delete request bbef3a0c-2b99-4df1-ae04-ef4da64e23e0 for widget 1ec4027e-2aab-471c-bb3f-25f703b1448d (owner Mary Matthews)
+2026-10-27 21:19:13,082 WARNING consumer.processor - Delete requests are not supported yet; skipped request bbef3a0c-2b99-4df1-ae04-ef4da64e23e0
+2026-10-27 21:19:13,328 INFO    consumer.processor - Processing update request d33e23b2-e90e-4a5e-b13d-9a8ce1778d80 for widget b28c12d8-9582-4701-ad16-a61f226ddc81 (owner Mary Matthews)
+2026-10-27 21:19:13,328 WARNING consumer.processor - Update requests are not supported yet; skipped request d33e23b2-e90e-4a5e-b13d-9a8ce1778d80
+2026-10-27 21:19:13,581 INFO    consumer.processor - Processing create request 0a685692-a76c-472b-a24f-097b5b4aacbb for widget 50bf3d9b-d372-45c3-818d-f24bca305d45 (owner John Jones)
+2026-10-27 21:19:13,723 INFO    consumer.storage - Stored widget 50bf3d9b-d372-45c3-818d-f24bca305d45 in s3://usu-cs5270-toki-web/widgets/john-jones/50bf3d9b-d372-45c3-818d-f24bca305d45
+2026-10-27 21:19:13,996 INFO    consumer.processor - Processing update request 4c8daa1c-ff38-4671-af3f-5f4a79eefc3b for widget 7ec9dd3d-2c48-4b48-a163-49d11bf2ed64 (owner Henry Hops)
+2026-10-27 21:19:13,996 WARNING consumer.processor - Update requests are not supported yet; skipped request 4c8daa1c-ff38-4671-af3f-5f4a79eefc3b
+2026-10-27 21:19:14,405 INFO    consumer.processor - Processing delete request e3bca564-371e-4bcd-b7de-be6167c7b644 for widget 38458b0a-036d-436d-a1a3-7dffbe18227d (owner Mary Matthews)
+2026-10-27 21:19:14,405 WARNING consumer.processor - Delete requests are not supported yet; skipped request e3bca564-371e-4bcd-b7de-be6167c7b644
+2026-10-27 21:19:14,655 INFO    consumer.processor - Processing update request edaf92a7-d406-4e3b-89b8-a30b4c8e1e32 for widget 907a0692-e131-4754-9661-1de9d903ddc4 (owner Henry Hops)
+2026-10-27 21:19:14,655 WARNING consumer.processor - Update requests are not supported yet; skipped request edaf92a7-d406-4e3b-89b8-a30b4c8e1e32
+2026-10-27 21:19:14,910 INFO    consumer.processor - Processing update request 1a259690-cae8-4428-bb8c-91d4f06d81b5 for widget 907a0692-e131-4754-9661-1de9d903ddc4 (owner Henry Hops)
+2026-10-27 21:19:14,910 WARNING consumer.processor - Update requests are not supported yet; skipped request 1a259690-cae8-4428-bb8c-91d4f06d81b5
+2026-10-27 21:19:15,148 INFO    consumer.processor - Processing update request a7e289f6-4eb1-4ad6-bf81-58b360db6ec5 for widget 1bef98d0-334c-4c4c-8213-9a784f56db6b (owner Sue Smith)
+2026-10-27 21:19:15,148 WARNING consumer.processor - Update requests are not supported yet; skipped request a7e289f6-4eb1-4ad6-bf81-58b360db6ec5
+2026-10-27 21:19:15,394 INFO    consumer.processor - Processing update request 37747b9c-cbdf-4c03-919e-a1b70e6c6e7d for widget 1d8ce535-d4d1-46fb-afed-b6e7453dc650 (owner John Jones)
+2026-10-27 21:19:15,394 WARNING consumer.processor - Update requests are not supported yet; skipped request 37747b9c-cbdf-4c03-919e-a1b70e6c6e7d
+2026-10-27 21:19:15,637 INFO    consumer.processor - Processing delete request f7906622-ce66-4796-8df5-4c0c98a04c4d for widget 74e58c4d-d22e-4a62-a251-5b501d18d102 (owner John Jones)
+2026-10-27 21:19:15,638 WARNING consumer.processor - Delete requests are not supported yet; skipped request f7906622-ce66-4796-8df5-4c0c98a04c4d
+2026-10-27 21:19:15,895 INFO    consumer.processor - Processing create request 34834166-a0b3-468f-ad1e-90517779506a for widget 888de65b-da64-41c0-bdc5-cacea83df777 (owner Henry Hops)
+2026-10-27 21:19:16,049 INFO    consumer.storage - Stored widget 888de65b-da64-41c0-bdc5-cacea83df777 in s3://usu-cs5270-toki-web/widgets/henry-hops/888de65b-da64-41c0-bdc5-cacea83df777
+2026-10-27 21:19:16,297 INFO    consumer.processor - Processing create request 8486abd8-1286-4a07-8d45-e356777efe9f for widget a7b89746-d082-4b9d-9066-909600b3165e (owner Sue Smith)
+2026-10-27 21:19:16,441 INFO    consumer.storage - Stored widget a7b89746-d082-4b9d-9066-909600b3165e in s3://usu-cs5270-toki-web/widgets/sue-smith/a7b89746-d082-4b9d-9066-909600b3165e
+2026-10-27 21:19:16,716 INFO    consumer.processor - Processing create request 80ea9c88-e27b-4256-a90f-351ba816a023 for widget 59a3fc29-ed06-48ad-9cb6-d3010a4a618c (owner Sue Smith)
+2026-10-27 21:19:16,905 INFO    consumer.storage - Stored widget 59a3fc29-ed06-48ad-9cb6-d3010a4a618c in s3://usu-cs5270-toki-web/widgets/sue-smith/59a3fc29-ed06-48ad-9cb6-d3010a4a618c
+2026-10-27 21:19:17,148 INFO    consumer.processor - Processing create request ecd889ae-1a1d-413a-8e93-3aa5d7b823d8 for widget 8788eb95-49cb-40d0-a0ae-2dc7daf1f59c (owner John Jones)
+2026-10-27 21:19:17,284 INFO    consumer.storage - Stored widget 8788eb95-49cb-40d0-a0ae-2dc7daf1f59c in s3://usu-cs5270-toki-web/widgets/john-jones/8788eb95-49cb-40d0-a0ae-2dc7daf1f59c
+2026-10-27 21:19:17,537 INFO    consumer.processor - Processing create request 71429484-f7b7-48a5-98e3-c5b3e1eb7d8a for widget 85bcbda8-c7f3-4b1f-b405-20e1cd59c724 (owner Mary Matthews)
+2026-10-27 21:19:17,680 INFO    consumer.storage - Stored widget 85bcbda8-c7f3-4b1f-b405-20e1cd59c724 in s3://usu-cs5270-toki-web/widgets/mary-matthews/85bcbda8-c7f3-4b1f-b405-20e1cd59c724
+2026-10-27 21:19:17,932 INFO    consumer.processor - Processing create request a42518e4-ccd2-4f87-b4e1-8558e84a9ee1 for widget fb8a5c88-0e40-49a6-b947-247195dde55c (owner Mary Matthews)
+2026-10-27 21:19:18,072 INFO    consumer.storage - Stored widget fb8a5c88-0e40-49a6-b947-247195dde55c in s3://usu-cs5270-toki-web/widgets/mary-matthews/fb8a5c88-0e40-49a6-b947-247195dde55c
+2026-10-27 21:19:18,319 INFO    consumer.processor - Processing create request 82f453fc-c99d-488d-bd0a-bd69a6b7cd8f for widget 05e1db9d-8d3d-4a51-90e5-baa856687a66 (owner Mary Matthews)
+2026-10-27 21:19:18,460 INFO    consumer.storage - Stored widget 05e1db9d-8d3d-4a51-90e5-baa856687a66 in s3://usu-cs5270-toki-web/widgets/mary-matthews/05e1db9d-8d3d-4a51-90e5-baa856687a66
+2026-10-27 21:19:18,711 INFO    consumer.processor - Processing update request 5583c065-9cad-4393-8a1b-18cc8b6439e7 for widget 1bef98d0-334c-4c4c-8213-9a784f56db6b (owner Sue Smith)
+2026-10-27 21:19:18,711 WARNING consumer.processor - Update requests are not supported yet; skipped request 5583c065-9cad-4393-8a1b-18cc8b6439e7
+2026-10-27 21:19:18,954 INFO    consumer.processor - Processing create request 9e855f55-a814-49f7-a06c-f6ffd60ace30 for widget bd0c0c2d-f783-46f3-ac26-c18c64080f79 (owner Henry Hops)
+2026-10-27 21:19:19,098 INFO    consumer.storage - Stored widget bd0c0c2d-f783-46f3-ac26-c18c64080f79 in s3://usu-cs5270-toki-web/widgets/henry-hops/bd0c0c2d-f783-46f3-ac26-c18c64080f79
+2026-10-27 21:19:19,347 INFO    consumer.processor - Processing delete request 47cc326a-2c1c-4918-b079-7c57731f4335 for widget 1bef98d0-334c-4c4c-8213-9a784f56db6b (owner Sue Smith)
+2026-10-27 21:19:19,347 WARNING consumer.processor - Delete requests are not supported yet; skipped request 47cc326a-2c1c-4918-b079-7c57731f4335
+2026-10-27 21:19:19,606 INFO    consumer.processor - Processing create request 749810d3-ad7d-409a-8c48-e9913227ff41 for widget e2f3c15f-2a1a-40fe-b8ac-e088b0d6246e (owner John Jones)
+2026-10-27 21:19:19,752 INFO    consumer.storage - Stored widget e2f3c15f-2a1a-40fe-b8ac-e088b0d6246e in s3://usu-cs5270-toki-web/widgets/john-jones/e2f3c15f-2a1a-40fe-b8ac-e088b0d6246e
+2026-10-27 21:19:20,007 INFO    consumer.processor - Processing create request 997b21b1-a69a-4fc6-a50e-92cfc6a72790 for widget 0d31c327-e497-4b0b-b14e-546f8f33a9cc (owner Sue Smith)
+2026-10-27 21:19:20,151 INFO    consumer.storage - Stored widget 0d31c327-e497-4b0b-b14e-546f8f33a9cc in s3://usu-cs5270-toki-web/widgets/sue-smith/0d31c327-e497-4b0b-b14e-546f8f33a9cc
+2026-10-27 21:19:20,417 INFO    consumer.processor - Processing update request d5fc4726-0ffd-4395-a2a5-8e28f0a2526f for widget 888de65b-da64-41c0-bdc5-cacea83df777 (owner Henry Hops)
+2026-10-27 21:19:20,417 WARNING consumer.processor - Update requests are not supported yet; skipped request d5fc4726-0ffd-4395-a2a5-8e28f0a2526f
+2026-10-27 21:19:25,530 INFO    consumer.loop - No requests for 5.0s; stopping
+2026-10-27 21:19:25,531 INFO    consumer.loop - Consumer stopped: 50 processed, 0 failed

@@ -1,0 +1,104 @@
+2026-10-27 21:23:58,124 INFO    consumer - Starting consumer: request-bucket=usu-cs5270-toki-requests storage=dynamodb target=widgets region=us-east-1
+2026-10-27 21:23:58,243 INFO    consumer.loop - Consumer started (max_runtime=None, max_idle=5.0)
+2026-10-27 21:23:59,632 INFO    consumer.processor - Processing create request 98e693f4-9053-406f-a5a8-de0b8bfdfba4 for widget 33602284-4e19-4d91-ad6c-3809b6c60bcb (owner Sue Smith)
+2026-10-27 21:23:59,849 INFO    consumer.storage - Stored widget 33602284-4e19-4d91-ad6c-3809b6c60bcb in DynamoDB table widgets
+2026-10-27 21:24:00,101 INFO    consumer.processor - Processing create request f82769da-0e17-4576-a325-467b3cd31a2c for widget c790c31d-732b-40db-bc93-ee76d3515e9c (owner Sue Smith)
+2026-10-27 21:24:00,163 INFO    consumer.storage - Stored widget c790c31d-732b-40db-bc93-ee76d3515e9c in DynamoDB table widgets
+2026-10-27 21:24:00,424 INFO    consumer.processor - Processing create request e7b6bb9d-43e0-444d-98a8-922b75105212 for widget 0f4001e0-20b4-4da8-9a74-7f9ef598db3e (owner Mary Matthews)
+2026-10-27 21:24:00,484 INFO    consumer.storage - Stored widget 0f4001e0-20b4-4da8-9a74-7f9ef598db3e in DynamoDB table widgets
+2026-10-27 21:24:00,780 INFO    consumer.processor - Processing create request 33d49fc1-6a62-497d-a44a-6704a10c6564 for widget b8b280e7-1543-4bdf-a79e-8721b5e7f68c (owner John Jones)
+2026-10-27 21:24:00,842 INFO    consumer.storage - Stored widget b8b280e7-1543-4bdf-a79e-8721b5e7f68c in DynamoDB table widgets
+2026-10-27 21:24:01,107 INFO    consumer.processor - Processing create request ecd12069-db60-4594-9626-5fd41ffd41a4 for widget 1c662bb0-ca35-4667-ae84-f582e791a285 (owner Mary Matthews)
+2026-10-27 21:24:01,167 INFO    consumer.storage - Stored widget 1c662bb0-ca35-4667-ae84-f582e791a285 in DynamoDB table widgets
+2026-10-27 21:24:01,425 INFO    consumer.processor - Processing create request 5d62b116-5c15-49c0-b808-acb855b739bf for widget 5f4aae19-5772-40c3-88b7-7112e39506b1 (owner Henry Hops)
+2026-10-27 21:24:01,483 INFO    consumer.storage - Stored widget 5f4aae19-5772-40c3-88b7-7112e39506b1 in DynamoDB table widgets
+2026-10-27 21:24:01,731 INFO    consumer.processor - Processing create request 79511b24-42df-448e-91bf-22cb0979ec7c for widget 7fded835-84c6-4ae5-91ae-7f485f4d783e (owner Sue Smith)
+2026-10-27 21:24:01,789 INFO    consumer.storage - Stored widget 7fded835-84c6-4ae5-91ae-7f485f4d783e in DynamoDB table widgets
+2026-10-27 21:24:02,026 INFO    consumer.processor - Processing create request 43934509-f9f8-40d0-bd59-7ce419821ab8 for widget 7e7e5205-61d0-4b94-b0d2-9d920058a74f (owner Sue Smith)
+2026-10-27 21:24:02,083 INFO    consumer.storage - Stored widget 7e7e5205-61d0-4b94-b0d2-9d920058a74f in DynamoDB table widgets
+2026-10-27 21:24:02,315 INFO    consumer.processor - Processing delete request db51b403-4d5b-4b50-960e-39effc33d6fa for widget 0f4001e0-20b4-4da8-9a74-7f9ef598db3e (owner Mary Matthews)
+2026-10-27 21:24:02,315 WARNING consumer.processor - Delete requests are not supported yet; skipped request db51b403-4d5b-4b50-960e-39effc33d6fa
+2026-10-27 21:24:02,547 INFO    consumer.processor - Processing create request 15e8a7d7-6672-4648-a3e2-f302ed2a84b3 for widget 11a4f3a2-ed9b-4689-a251-cf884b88d020 (owner John Jones)
+2026-10-27 21:24:02,604 INFO    consumer.storage - Stored widget 11a4f3a2-ed9b-4689-a251-cf884b88d020 in DynamoDB table widgets
+2026-10-27 21:24:02,848 INFO    consumer.processor - Processing create request 93202003-c1ad-4def-8e96-c2dff2575b50 for widget 2d567430-1379-4a12-bf7f-08bbfdb97022 (owner John Jones)
+2026-10-27 21:24:02,904 INFO    consumer.storage - Stored widget 2d567430-1379-4a12-bf7f-08bbfdb97022 in DynamoDB table widgets
+2026-10-27 21:24:03,126 INFO    consumer.processor - Processing create request 911044a9-6890-4120-ba55-19b03fa31fb0 for widget 0eb29e26-cef6-480a-8126-fa74747c60bd (owner Henry Hops)
+2026-10-27 21:24:03,182 INFO    consumer.storage - Stored widget 0eb29e26-cef6-480a-8126-fa74747c60bd in DynamoDB table widgets
+2026-10-27 21:24:03,420 INFO    consumer.processor - Processing delete request fa7da4b4-9789-40fe-b39d-00e23720f96f for widget 0eb29e26-cef6-480a-8126-fa74747c60bd (owner Henry Hops)
+2026-10-27 21:24:03,420 WARNING consumer.processor - Delete requests are not supported yet; skipped request fa7da4b4-9789-40fe-b39d-00e23720f96f
+2026-10-27 21:24:03,655 INFO    consumer.processor - Processing create request 89ee9a3d-8112-4964-ba50-deaf40c34ce2 for widget 40ee7fd6-4fd3-406d-9880-6ed8f23880e0 (owner Mary Matthews)
+2026-10-27 21:24:03,711 INFO    consumer.storage - Stored widget 40ee7fd6-4fd3-406d-9880-6ed8f23880e0 in DynamoDB table widgets
+2026-10-27 21:24:03,945 INFO    consumer.processor - Processing create request 749dc3b3-74de-40aa-9600-754eaa27f86a for widget 95f7a9cf-7f4c-423b-acd0-b2d7557a94a7 (owner Sue Smith)
+2026-10-27 21:24:04,000 INFO    consumer.storage - Stored widget 95f7a9cf-7f4c-423b-acd0-b2d7557a94a7 in DynamoDB table widgets
+2026-10-27 21:24:04,237 INFO    consumer.processor - Processing delete request 831e7f38-2d81-4dc4-a3fc-63b140fa81c3 for widget 40ee7fd6-4fd3-406d-9880-6ed8f23880e0 (owner Mary Matthews)
+2026-10-27 21:24:04,237 WARNING consumer.processor - Delete requests are not supported yet; skipped request 831e7f38-2d81-4dc4-a3fc-63b140fa81c3
+2026-10-27 21:24:04,491 INFO    consumer.processor - Processing update request 765b5389-d18a-44ee-b18a-985dc8cb2687 for widget c790c31d-732b-40db-bc93-ee76d3515e9c (owner Sue Smith)
+2026-10-27 21:24:04,491 WARNING consumer.processor - Update requests are not supported yet; skipped request 765b5389-d18a-44ee-b18a-985dc8cb2687
+2026-10-27 21:24:04,760 INFO    consumer.processor - Processing create request 827f7653-5119-4264-82c8-2df124596eb0 for widget 4ceed097-ed0d-40ba-92e0-1e11804e5228 (owner Mary Matthews)
+2026-10-27 21:24:04,819 INFO    consumer.storage - Stored widget 4ceed097-ed0d-40ba-92e0-1e11804e5228 in DynamoDB table widgets
+2026-10-27 21:24:05,054 INFO    consumer.processor - Processing create request 92930f1a-d6c1-4351-8403-0299ac94d4d8 for widget 37b7898b-20d4-45a2-a291-5b4b68da7551 (owner Mary Matthews)
+2026-10-27 21:24:05,123 INFO    consumer.storage - Stored widget 37b7898b-20d4-45a2-a291-5b4b68da7551 in DynamoDB table widgets
+2026-10-27 21:24:05,358 INFO    consumer.processor - Processing create request 2f3d7a8c-915f-4f27-a0e3-965858beb182 for widget 6721cc2a-5fe2-4d6d-9bf2-cc481315a1b0 (owner Mary Matthews)
+2026-10-27 21:24:05,415 INFO    consumer.storage - Stored widget 6721cc2a-5fe2-4d6d-9bf2-cc481315a1b0 in DynamoDB table widgets
+2026-10-27 21:24:05,657 INFO    consumer.processor - Processing create request 231c1c1c-ebcf-4368-9d29-cfb5c71b74ce for widget 1abdd9b6-4683-45dc-b821-58a130841eb5 (owner John Jones)
+2026-10-27 21:24:05,715 INFO    consumer.storage - Stored widget 1abdd9b6-4683-45dc-b821-58a130841eb5 in DynamoDB table widgets
+2026-10-27 21:24:05,955 INFO    consumer.processor - Processing update request 998e722b-88a8-4ceb-8b3f-06bab8442a30 for widget c790c31d-732b-40db-bc93-ee76d3515e9c (owner Sue Smith)
+2026-10-27 21:24:05,955 WARNING consumer.processor - Update requests are not supported yet; skipped request 998e722b-88a8-4ceb-8b3f-06bab8442a30
+2026-10-27 21:24:06,213 INFO    consumer.processor - Processing create request bb36c9b1-79e5-4190-87d5-d5897c0cff81 for widget 3e70b848-79b8-4713-9981-3d1767f17c59 (owner Mary Matthews)
+2026-10-27 21:24:06,272 INFO    consumer.storage - Stored widget 3e70b848-79b8-4713-9981-3d1767f17c59 in DynamoDB table widgets
+2026-10-27 21:24:06,518 INFO    consumer.processor - Processing update request 47cd848b-20b4-42fe-a3d3-ce43ba4e8299 for widget 5f4aae19-5772-40c3-88b7-7112e39506b1 (owner Henry Hops)
+2026-10-27 21:24:06,518 WARNING consumer.processor - Update requests are not supported yet; skipped request 47cd848b-20b4-42fe-a3d3-ce43ba4e8299
+2026-10-27 21:24:06,762 INFO    consumer.processor - Processing create request 9f246166-7734-485a-8216-e02dbab6560a for widget 9b9455d2-c28b-4e48-9bc3-594306675a20 (owner Henry Hops)
+2026-10-27 21:24:06,822 INFO    consumer.storage - Stored widget 9b9455d2-c28b-4e48-9bc3-594306675a20 in DynamoDB table widgets
+2026-10-27 21:24:07,065 INFO    consumer.processor - Processing create request d2bf2c6d-e84c-4f50-988e-8a3e925ad4b5 for widget 11d94ade-58cb-4767-9830-7fa0f6db888e (owner John Jones)
+2026-10-27 21:24:07,123 INFO    consumer.storage - Stored widget 11d94ade-58cb-4767-9830-7fa0f6db888e in DynamoDB table widgets
+2026-10-27 21:24:07,385 INFO    consumer.processor - Processing update request 0b4905d6-caef-4f2b-858d-f30de89f3634 for widget c790c31d-732b-40db-bc93-ee76d3515e9c (owner Sue Smith)
+2026-10-27 21:24:07,385 WARNING consumer.processor - Update requests are not supported yet; skipped request 0b4905d6-caef-4f2b-858d-f30de89f3634
+2026-10-27 21:24:07,638 INFO    consumer.processor - Processing update request 1273eecc-62f5-4ddc-884b-4424f25de87f for widget 33602284-4e19-4d91-ad6c-3809b6c60bcb (owner Sue Smith)
+2026-10-27 21:24:07,638 WARNING consumer.processor - Update requests are not supported yet; skipped request 1273eecc-62f5-4ddc-884b-4424f25de87f
+2026-10-27 21:24:07,896 INFO    consumer.processor - Processing create request 04f34461-81c7-49db-bf7b-c0adfd8ddde3 for widget 82416792-4f88-455c-91b9-9d01135156f8 (owner John Jones)
+2026-10-27 21:24:07,956 INFO    consumer.storage - Stored widget 82416792-4f88-455c-91b9-9d01135156f8 in DynamoDB table widgets
+2026-10-27 21:24:08,203 INFO    consumer.processor - Processing update request f42c2787-147a-4dd3-a371-bf7b876dc17f for widget 33602284-4e19-4d91-ad6c-3809b6c60bcb (owner Sue Smith)
+2026-10-27 21:24:08,204 WARNING consumer.processor - Update requests are not supported yet; skipped request f42c2787-147a-4dd3-a371-bf7b876dc17f
+2026-10-27 21:24:08,448 INFO    consumer.processor - Processing update request 6f70299a-ebbd-4509-814e-d1517363019c for widget 95f7a9cf-7f4c-423b-acd0-b2d7557a94a7 (owner Sue Smith)
+2026-10-27 21:24:08,448 WARNING consumer.processor - Update requests are not supported yet; skipped request 6f70299a-ebbd-4509-814e-d1517363019c
+2026-10-27 21:24:08,845 INFO    consumer.processor - Processing create request 02361e98-ed74-4eb0-be5c-21d0f3de5187 for widget dc4fc851-44e4-48d7-a984-2ba95f0c02d8 (owner John Jones)
+2026-10-27 21:24:08,906 INFO    consumer.storage - Stored widget dc4fc851-44e4-48d7-a984-2ba95f0c02d8 in DynamoDB table widgets
+2026-10-27 21:24:09,157 INFO    consumer.processor - Processing create request b0437a44-25e7-42b0-b5dd-182ff5f4232f for widget 3487bc15-f981-4b26-b701-3c7ca9f0283e (owner Mary Matthews)
+2026-10-27 21:24:09,214 INFO    consumer.storage - Stored widget 3487bc15-f981-4b26-b701-3c7ca9f0283e in DynamoDB table widgets
+2026-10-27 21:24:09,457 INFO    consumer.processor - Processing update request aa4fe81f-b7e7-4613-9886-bede5e86b3e1 for widget 5f4aae19-5772-40c3-88b7-7112e39506b1 (owner Henry Hops)
+2026-10-27 21:24:09,457 WARNING consumer.processor - Update requests are not supported yet; skipped request aa4fe81f-b7e7-4613-9886-bede5e86b3e1
+2026-10-27 21:24:09,703 INFO    consumer.processor - Processing update request b5607331-7b78-45e1-9fe2-6d4f54e2785a for widget 6721cc2a-5fe2-4d6d-9bf2-cc481315a1b0 (owner Mary Matthews)
+2026-10-27 21:24:09,703 WARNING consumer.processor - Update requests are not supported yet; skipped request b5607331-7b78-45e1-9fe2-6d4f54e2785a
+2026-10-27 21:24:09,954 INFO    consumer.processor - Processing create request 9401a0c5-f601-43f8-91ff-1d3f403486e1 for widget 9e5d633a-50fe-4512-86db-220f39ac47b5 (owner Sue Smith)
+2026-10-27 21:24:10,014 INFO    consumer.storage - Stored widget 9e5d633a-50fe-4512-86db-220f39ac47b5 in DynamoDB table widgets
+2026-10-27 21:24:10,258 INFO    consumer.processor - Processing create request 9a95e9f8-c3bd-4d98-8e1e-2dff1dd9f690 for widget 16b29bc0-9f5f-4fb4-a695-06881b22260b (owner John Jones)
+2026-10-27 21:24:10,314 INFO    consumer.storage - Stored widget 16b29bc0-9f5f-4fb4-a695-06881b22260b in DynamoDB table widgets
+2026-10-27 21:24:10,560 INFO    consumer.processor - Processing create request 8188463a-77dd-480a-9691-9fe067059574 for widget d80d2424-08ce-4316-8e20-b4cf512fea1c (owner John Jones)
+2026-10-27 21:24:10,617 INFO    consumer.storage - Stored widget d80d2424-08ce-4316-8e20-b4cf512fea1c in DynamoDB table widgets
+2026-10-27 21:24:10,849 INFO    consumer.processor - Processing delete request 486c8cce-956e-4090-848f-f44ab8130717 for widget 9e5d633a-50fe-4512-86db-220f39ac47b5 (owner Sue Smith)
+2026-10-27 21:24:10,849 WARNING consumer.processor - Delete requests are not supported yet; skipped request 486c8cce-956e-4090-848f-f44ab8130717
+2026-10-27 21:24:11,075 INFO    consumer.processor - Processing create request 8b4bd66a-ef85-4bb2-a3f6-006c58a23334 for widget 475db2e2-edc6-46c4-9736-6e1da50eac6f (owner Henry Hops)
+2026-10-27 21:24:11,131 INFO    consumer.storage - Stored widget 475db2e2-edc6-46c4-9736-6e1da50eac6f in DynamoDB table widgets
+2026-10-27 21:24:11,358 INFO    consumer.processor - Processing create request 43ff4798-9d2e-429d-b0bf-a3c29f658332 for widget 54d585c8-4ff4-4b06-b0c8-c8538780d3fa (owner Henry Hops)
+2026-10-27 21:24:11,414 INFO    consumer.storage - Stored widget 54d585c8-4ff4-4b06-b0c8-c8538780d3fa in DynamoDB table widgets
+2026-10-27 21:24:11,667 INFO    consumer.processor - Processing delete request a67d03d1-afe1-48a1-9569-b1b4af69dda8 for widget 4ceed097-ed0d-40ba-92e0-1e11804e5228 (owner Mary Matthews)
+2026-10-27 21:24:11,667 WARNING consumer.processor - Delete requests are not supported yet; skipped request a67d03d1-afe1-48a1-9569-b1b4af69dda8
+2026-10-27 21:24:11,894 INFO    consumer.processor - Processing update request 2f502aee-e703-4ebe-9ca4-063c383c1a9c for widget b8b280e7-1543-4bdf-a79e-8721b5e7f68c (owner John Jones)
+2026-10-27 21:24:11,895 WARNING consumer.processor - Update requests are not supported yet; skipped request 2f502aee-e703-4ebe-9ca4-063c383c1a9c
+2026-10-27 21:24:12,140 INFO    consumer.processor - Processing update request b3709e40-2d80-419a-a1bf-7817cfe71fe0 for widget 3487bc15-f981-4b26-b701-3c7ca9f0283e (owner Mary Matthews)
+2026-10-27 21:24:12,140 WARNING consumer.processor - Update requests are not supported yet; skipped request b3709e40-2d80-419a-a1bf-7817cfe71fe0
+2026-10-27 21:24:12,369 INFO    consumer.processor - Processing create request fbde7784-62c4-4e1e-82de-f9f75fa8a034 for widget 3d0eb902-01cf-4087-bb25-b7c372ded2f2 (owner Sue Smith)
+2026-10-27 21:24:12,427 INFO    consumer.storage - Stored widget 3d0eb902-01cf-4087-bb25-b7c372ded2f2 in DynamoDB table widgets
+2026-10-27 21:24:12,666 INFO    consumer.processor - Processing delete request 660ebeb5-6c01-4f18-96f1-c82b64d413ea for widget 5f4aae19-5772-40c3-88b7-7112e39506b1 (owner Henry Hops)
+2026-10-27 21:24:12,667 WARNING consumer.processor - Delete requests are not supported yet; skipped request 660ebeb5-6c01-4f18-96f1-c82b64d413ea
+2026-10-27 21:24:12,909 INFO    consumer.processor - Processing update request 3bb82f7c-e901-43ed-aa16-57a86b9ab19a for widget c790c31d-732b-40db-bc93-ee76d3515e9c (owner Sue Smith)
+2026-10-27 21:24:12,910 WARNING consumer.processor - Update requests are not supported yet; skipped request 3bb82f7c-e901-43ed-aa16-57a86b9ab19a
+2026-10-27 21:24:13,155 INFO    consumer.processor - Processing create request a65f8666-70da-45b4-b32a-97015086f2ee for widget 9303374c-43a0-4455-ae5f-fc870b04d488 (owner Sue Smith)
+2026-10-27 21:24:13,213 INFO    consumer.storage - Stored widget 9303374c-43a0-4455-ae5f-fc870b04d488 in DynamoDB table widgets
+2026-10-27 21:24:13,455 INFO    consumer.processor - Processing update request 64ef85ff-fee4-4fb8-8c43-7ad12d159e0b for widget 82416792-4f88-455c-91b9-9d01135156f8 (owner John Jones)
+2026-10-27 21:24:13,455 WARNING consumer.processor - Update requests are not supported yet; skipped request 64ef85ff-fee4-4fb8-8c43-7ad12d159e0b
+2026-10-27 21:24:13,727 INFO    consumer.processor - Processing update request d98c701e-ad4a-4cf2-88b6-18a6f4ab71a7 for widget dc4fc851-44e4-48d7-a984-2ba95f0c02d8 (owner John Jones)
+2026-10-27 21:24:13,727 WARNING consumer.processor - Update requests are not supported yet; skipped request d98c701e-ad4a-4cf2-88b6-18a6f4ab71a7
+2026-10-27 21:24:18,885 INFO    consumer.loop - No requests for 5.0s; stopping
+2026-10-27 21:24:18,885 INFO    consumer.loop - Consumer stopped: 50 processed, 0 failed
