@@ -1,0 +1,10 @@
+labsuser.pem
+*.pem
+producer.jar
+consumer.log
+logs/producer.log
+logs/2026-10/
+.coverage
+__pycache__/
+.pytest_cache/
+.claude/
